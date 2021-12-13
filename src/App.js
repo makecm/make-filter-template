@@ -1,36 +1,30 @@
 import PropTypes from "prop-types";
 import './App.css';
-import Shapes from './components/shapes/shapes'
-import Logos from './components/logos/logos'
-import {ReactComponent as MakeLogo} from './logo.svg'
-import {ReactComponent as ReactLogo} from './react-logo.svg'
-
-function App({ headline, showLogos, backgroundImage }) {
+  
+function App({ color, filter, image, position }) {
   return (
-    <div className="App" style={{ backgroundImage: `url('${backgroundImage}')` }}>
-      {showLogos && (
-        <Logos logoOne={<MakeLogo />} logoTwo={<ReactLogo />} />
-      )}
-
-      <h1>{headline}</h1>
-
-      <div className="shape-container">
-        <Shapes />
-      </div>
+    <div className="App" 
+    style={{ 
+      backgroundImage: `url('${image}')`, 
+      backgroundColor: `${color}`,
+      backgroundBlendMode: `${filter}`,
+      backgroundPosition: `${position}`  }}>
     </div>
   );
 }
 
 App.propTypes = {
-  headline: PropTypes.string,
-  showLogos: PropTypes.string,
-  backgroundImage: PropTypes.string,
+  color: PropTypes.string,
+  filter: PropTypes.string,
+  image: PropTypes.string,
+  position: PropTypes.string,
 }
 
 App.defaultProps = {
-  headline: 'Hello World',
-  showLogos: true,
-  backgroundImage: '',
+  color: 'transparent',
+  filter: 'multiply',
+  position: '50% 5%',
+  image: 'https://source.unsplash.com/collection/16599199/',
 }
 
 export default App;

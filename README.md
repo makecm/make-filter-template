@@ -1,13 +1,12 @@
-# Make Hello World Starter Template (React)
+# Make Image Filter Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+With this template you can set 4 custom values: 
 
-## Looking for a different language?
-- React
-- [Vue](https://github.com/Outfitio/make-hello-world-vue-template)
-- [Angular](https://github.com/Outfitio/make-hello-world-angular-template)
+  #### color 
+  #### filter  
+  #### image  
+  #### position 
 
-<img src="https://files.outfit.io/media_library_items/236740/Screen%2520Shot%25202020-11-03%2520at%252010.34.34%2520am.png" style="width: 60%; margin: 0 auto; display: block;" alt="make starter template" />
 
 ## Development server
 
